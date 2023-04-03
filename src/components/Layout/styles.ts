@@ -9,8 +9,8 @@ import styled from "styled-components";
 export const Grid_Layout = styled.div`
     display: grid;
 
-    grid-template-columns: 250px auto;
-    grid-template-rows: 70px auto;
+    grid-template-columns: 13rem auto;
+    grid-template-rows: 3rem auto;
 
     grid-template-areas:
         'AS MH'

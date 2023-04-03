@@ -7,8 +7,8 @@ export function Toogle() {
             <ToggleLabel>Light</ToggleLabel>
             <ToogleSelector
                 checked
-                uncheckedIcon={false}
-                checkedIcon={false}
+                uncheckedIcon={true}
+                checkedIcon={true}
                 onChange={ () => console.log('mudou') }
             />
             <ToggleLabel>Dark</ToggleLabel>

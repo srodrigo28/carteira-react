@@ -1,8 +1,9 @@
 ### Instalações 
-    * https://www.udemy.com/course/react-e-typescript/learn/lecture/21260138#questions
+    * https://www.udemy.com/course/react-e-typescript/learn/lecture/21311590#questions/17545008
     * npm install --save styled-components
     * npm install --save @types/styled-components
     * npm install react-switch
+    * npm install --save react-icons
 ### NPM Referências
     * https://www.npmjs.com/package/react-switch
 ### Configurando preferencias
