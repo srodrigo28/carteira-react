@@ -1,20 +1,26 @@
 import { Container, TitleContainer, Controllers } from "./styles";
-import SelectInput from './../SelectInput'
 
-export function ContentHeader() {
+    interface IContentHeaderProps{
+        title: string;
+        lineColor: string;
+        children: React.ReactNode;
+    }
     
-    const options = [
-        { value: 'Rodrigo', label: 'Rodrigo' },
-        { value: 'Maria', label: 'Maria' },
-        { value: 'Joana', label: 'Joana' },
-    ]
-
+const ContentHeader: React.FC<IContentHeaderProps> = ({
+    title, lineColor, children
+}) => {
+        
     return(
         <Container>
-            <TitleContainer><h1>Contanet Header</h1></TitleContainer>
+            <TitleContainer lineColor={lineColor}>
+                <h1>{title}</h1>
+            </TitleContainer>
             <Controllers>
-               <SelectInput options={options}  />
+                {children}
+                {lineColor}
             </Controllers>
         </Container>
     )
 }
+
+export default ContentHeader;

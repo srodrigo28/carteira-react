@@ -16,6 +16,7 @@ export const Grid_Layout = styled.div`
         'AS MH'
         'AS CT';
 
-        height: 100vh;
+        height: 100%;
+        
 
 `

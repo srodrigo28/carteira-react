@@ -9,8 +9,7 @@ export function App() {
     return (
         <ThemeProvider theme={dark}>
             <GlobalStyles />
-            <Layout>
-            </Layout>
+            <Layout />
         </ThemeProvider>
     )
 }
