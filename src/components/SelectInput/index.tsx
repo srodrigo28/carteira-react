@@ -7,14 +7,18 @@ interface ISelectInputProps {
     }[],
 }
 
-export function SelectInput<ISelectInputProps>( ){
-    return(
+const SelectInput: React.FC<ISelectInputProps> = ({options}) => {
+    return (
         <Container>
-            <select> 
-                <option value="novo">novo</option>
-                <option value="usado">usado</option>
-                <option value="semi-novo">semi-novo</option>
+            <select>
+                {
+                    options.map(option => (
+                        <option value={option.value}>{option.label}</option>
+                    ))
+                }
             </select>
         </Container>
-    )
+    );
 }
+
+export default SelectInput
